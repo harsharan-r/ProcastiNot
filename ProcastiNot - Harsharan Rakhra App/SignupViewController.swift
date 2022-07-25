@@ -13,6 +13,12 @@ import Firebase
 class SignupViewController: UIViewController {
 
 
+    
+    
+    
+    @IBOutlet weak var textfield: UITextField!
+    @IBOutlet weak var haveAnAccount: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -20,24 +26,24 @@ class SignupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        // Do any additional setup after loading the view.
     }
     
    
     @IBAction func signupTapped(_ sender: Any) {
         validateFields()
-        
     }
+
     
     
     @IBAction func alreadyHaveAnAccountTapped(_ sender: Any) {
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "login")
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
+ 
     
     func validateFields(){
         if(email.text?.isEmpty == true){

@@ -19,15 +19,15 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     // AUTO LOADS USER TO MAIN PAGE IS SOMEONE IS LOGGED IN
+    
     override func viewDidAppear(_ animated: Bool) {
         checkUserInfo()
     }
     
     @IBAction func loginTapped(_ sender: Any) {
         validateFields()
-        
-        
     }
+    
     
     @IBAction func createAccountTapped(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -35,6 +35,7 @@ class LoginViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
+
     
     func validateFields(){
         if(email.text?.isEmpty == true){

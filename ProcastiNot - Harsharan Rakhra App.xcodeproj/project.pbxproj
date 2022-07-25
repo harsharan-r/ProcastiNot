@@ -24,6 +24,23 @@
 		8F56AEFA288E3FD600652022 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8F56AEF9288E3FD600652022 /* FirebaseAuth */; };
 		8F56AEFC288E3FD600652022 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8F56AEFB288E3FD600652022 /* FirebaseDatabase */; };
 		8F56AEFE288E3FD600652022 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8F56AEFD288E3FD600652022 /* FirebaseFirestore */; };
+		8F56AF07288F0E8E00652022 /* Aoki Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF00288F0E8E00652022 /* Aoki Inline.otf */; };
+		8F56AF08288F0E8E00652022 /* Aoki Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF01288F0E8E00652022 /* Aoki Regular.otf */; };
+		8F56AF09288F0E8E00652022 /* Aoki Regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF03288F0E8E00652022 /* Aoki Regular.woff */; };
+		8F56AF0A288F0E8E00652022 /* Aoki Inline.woff in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF04288F0E8E00652022 /* Aoki Inline.woff */; };
+		8F56AF0B288F0E8E00652022 /* Aoki Light.woff in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF05288F0E8E00652022 /* Aoki Light.woff */; };
+		8F56AF0C288F0E8E00652022 /* Aoki Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF06288F0E8E00652022 /* Aoki Light.otf */; };
+		8F56AF19288F3B2A00652022 /* Typo_Round_Bold_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF0E288F3B2A00652022 /* Typo_Round_Bold_Demo.otf */; };
+		8F56AF1A288F3B2A00652022 /* Typo_Round_Light_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF0F288F3B2A00652022 /* Typo_Round_Light_Demo.otf */; };
+		8F56AF1B288F3B2A00652022 /* Typo_Round_Thin_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF10288F3B2A00652022 /* Typo_Round_Thin_Demo.otf */; };
+		8F56AF1C288F3B2A00652022 /* typo_round_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF11288F3B2A00652022 /* typo_round_1024.png */; };
+		8F56AF1D288F3B2A00652022 /* Typo_Round_Bold_Italic_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF12288F3B2A00652022 /* Typo_Round_Bold_Italic_Demo.otf */; };
+		8F56AF1E288F3B2A00652022 /* Typo_Round_Regular_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF13288F3B2A00652022 /* Typo_Round_Regular_Demo.otf */; };
+		8F56AF1F288F3B2A00652022 /* Typo Round test screen.url in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF14288F3B2A00652022 /* Typo Round test screen.url */; };
+		8F56AF20288F3B2A00652022 /* Typo_Round_Light_Italic_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF15288F3B2A00652022 /* Typo_Round_Light_Italic_Demo.otf */; };
+		8F56AF21288F3B2A00652022 /* Read_Me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF16288F3B2A00652022 /* Read_Me.txt */; };
+		8F56AF22288F3B2A00652022 /* Typo_Round_Italic_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF17288F3B2A00652022 /* Typo_Round_Italic_Demo.otf */; };
+		8F56AF23288F3B2A00652022 /* Typo_Round_Thin_Italic Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF18288F3B2A00652022 /* Typo_Round_Thin_Italic Demo.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +56,23 @@
 		8F56AEE7288CDB3700652022 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		8F56AEE9288CE27500652022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F56AEF4288E3A7A00652022 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8F56AF00288F0E8E00652022 /* Aoki Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aoki Inline.otf"; sourceTree = "<group>"; };
+		8F56AF01288F0E8E00652022 /* Aoki Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aoki Regular.otf"; sourceTree = "<group>"; };
+		8F56AF03288F0E8E00652022 /* Aoki Regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aoki Regular.woff"; sourceTree = "<group>"; };
+		8F56AF04288F0E8E00652022 /* Aoki Inline.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aoki Inline.woff"; sourceTree = "<group>"; };
+		8F56AF05288F0E8E00652022 /* Aoki Light.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aoki Light.woff"; sourceTree = "<group>"; };
+		8F56AF06288F0E8E00652022 /* Aoki Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aoki Light.otf"; sourceTree = "<group>"; };
+		8F56AF0E288F3B2A00652022 /* Typo_Round_Bold_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typo_Round_Bold_Demo.otf; sourceTree = "<group>"; };
+		8F56AF0F288F3B2A00652022 /* Typo_Round_Light_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typo_Round_Light_Demo.otf; sourceTree = "<group>"; };
+		8F56AF10288F3B2A00652022 /* Typo_Round_Thin_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typo_Round_Thin_Demo.otf; sourceTree = "<group>"; };
+		8F56AF11288F3B2A00652022 /* typo_round_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = typo_round_1024.png; sourceTree = "<group>"; };
+		8F56AF12288F3B2A00652022 /* Typo_Round_Bold_Italic_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typo_Round_Bold_Italic_Demo.otf; sourceTree = "<group>"; };
+		8F56AF13288F3B2A00652022 /* Typo_Round_Regular_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typo_Round_Regular_Demo.otf; sourceTree = "<group>"; };
+		8F56AF14288F3B2A00652022 /* Typo Round test screen.url */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Typo Round test screen.url"; sourceTree = "<group>"; };
+		8F56AF15288F3B2A00652022 /* Typo_Round_Light_Italic_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typo_Round_Light_Italic_Demo.otf; sourceTree = "<group>"; };
+		8F56AF16288F3B2A00652022 /* Read_Me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Read_Me.txt; sourceTree = "<group>"; };
+		8F56AF17288F3B2A00652022 /* Typo_Round_Italic_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typo_Round_Italic_Demo.otf; sourceTree = "<group>"; };
+		8F56AF18288F3B2A00652022 /* Typo_Round_Thin_Italic Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typo_Round_Thin_Italic Demo.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +117,9 @@
 				8F56AED3288AE2A400652022 /* SceneDelegate.swift */,
 				8F56AED5288AE2A400652022 /* ViewController.swift */,
 				8F56AED7288AE2A400652022 /* Main.storyboard */,
+				8F56AF0D288F3B2A00652022 /* typo-round */,
 				8F56AEE5288CDB1600652022 /* LoginViewController.swift */,
+				8F56AEFF288F0E8E00652022 /* aoki-font */,
 				8F56AEF4288E3A7A00652022 /* HomeViewController.swift */,
 				8F56AEE7288CDB3700652022 /* SignupViewController.swift */,
 				8F56AEDA288AE2A500652022 /* Assets.xcassets */,
@@ -91,6 +127,45 @@
 				8F56AEDF288AE2A500652022 /* Info.plist */,
 			);
 			path = "ProcastiNot - Harsharan Rakhra App";
+			sourceTree = "<group>";
+		};
+		8F56AEFF288F0E8E00652022 /* aoki-font */ = {
+			isa = PBXGroup;
+			children = (
+				8F56AF00288F0E8E00652022 /* Aoki Inline.otf */,
+				8F56AF01288F0E8E00652022 /* Aoki Regular.otf */,
+				8F56AF02288F0E8E00652022 /* Webfonts */,
+				8F56AF06288F0E8E00652022 /* Aoki Light.otf */,
+			);
+			path = "aoki-font";
+			sourceTree = "<group>";
+		};
+		8F56AF02288F0E8E00652022 /* Webfonts */ = {
+			isa = PBXGroup;
+			children = (
+				8F56AF03288F0E8E00652022 /* Aoki Regular.woff */,
+				8F56AF04288F0E8E00652022 /* Aoki Inline.woff */,
+				8F56AF05288F0E8E00652022 /* Aoki Light.woff */,
+			);
+			path = Webfonts;
+			sourceTree = "<group>";
+		};
+		8F56AF0D288F3B2A00652022 /* typo-round */ = {
+			isa = PBXGroup;
+			children = (
+				8F56AF0E288F3B2A00652022 /* Typo_Round_Bold_Demo.otf */,
+				8F56AF0F288F3B2A00652022 /* Typo_Round_Light_Demo.otf */,
+				8F56AF10288F3B2A00652022 /* Typo_Round_Thin_Demo.otf */,
+				8F56AF11288F3B2A00652022 /* typo_round_1024.png */,
+				8F56AF12288F3B2A00652022 /* Typo_Round_Bold_Italic_Demo.otf */,
+				8F56AF13288F3B2A00652022 /* Typo_Round_Regular_Demo.otf */,
+				8F56AF14288F3B2A00652022 /* Typo Round test screen.url */,
+				8F56AF15288F3B2A00652022 /* Typo_Round_Light_Italic_Demo.otf */,
+				8F56AF16288F3B2A00652022 /* Read_Me.txt */,
+				8F56AF17288F3B2A00652022 /* Typo_Round_Italic_Demo.otf */,
+				8F56AF18288F3B2A00652022 /* Typo_Round_Thin_Italic Demo.otf */,
+			);
+			path = "typo-round";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +241,25 @@
 			files = (
 				8F56AEDE288AE2A500652022 /* LaunchScreen.storyboard in Resources */,
 				8F56AEEA288CE27500652022 /* GoogleService-Info.plist in Resources */,
+				8F56AF1A288F3B2A00652022 /* Typo_Round_Light_Demo.otf in Resources */,
+				8F56AF23288F3B2A00652022 /* Typo_Round_Thin_Italic Demo.otf in Resources */,
+				8F56AF21288F3B2A00652022 /* Read_Me.txt in Resources */,
 				8F56AEDB288AE2A500652022 /* Assets.xcassets in Resources */,
+				8F56AF20288F3B2A00652022 /* Typo_Round_Light_Italic_Demo.otf in Resources */,
+				8F56AF1D288F3B2A00652022 /* Typo_Round_Bold_Italic_Demo.otf in Resources */,
+				8F56AF0A288F0E8E00652022 /* Aoki Inline.woff in Resources */,
+				8F56AF09288F0E8E00652022 /* Aoki Regular.woff in Resources */,
+				8F56AF22288F3B2A00652022 /* Typo_Round_Italic_Demo.otf in Resources */,
+				8F56AF19288F3B2A00652022 /* Typo_Round_Bold_Demo.otf in Resources */,
+				8F56AF08288F0E8E00652022 /* Aoki Regular.otf in Resources */,
+				8F56AF1F288F3B2A00652022 /* Typo Round test screen.url in Resources */,
 				8F56AED9288AE2A400652022 /* Main.storyboard in Resources */,
+				8F56AF1E288F3B2A00652022 /* Typo_Round_Regular_Demo.otf in Resources */,
+				8F56AF07288F0E8E00652022 /* Aoki Inline.otf in Resources */,
+				8F56AF1B288F3B2A00652022 /* Typo_Round_Thin_Demo.otf in Resources */,
+				8F56AF1C288F3B2A00652022 /* typo_round_1024.png in Resources */,
+				8F56AF0B288F0E8E00652022 /* Aoki Light.woff in Resources */,
+				8F56AF0C288F0E8E00652022 /* Aoki Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
