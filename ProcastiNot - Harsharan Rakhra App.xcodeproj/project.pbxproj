@@ -41,6 +41,9 @@
 		8F56AF21288F3B2A00652022 /* Read_Me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF16288F3B2A00652022 /* Read_Me.txt */; };
 		8F56AF22288F3B2A00652022 /* Typo_Round_Italic_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF17288F3B2A00652022 /* Typo_Round_Italic_Demo.otf */; };
 		8F56AF23288F3B2A00652022 /* Typo_Round_Thin_Italic Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F56AF18288F3B2A00652022 /* Typo_Round_Thin_Italic Demo.otf */; };
+		8F56AF252890301E00652022 /* ControlTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56AF242890301E00652022 /* ControlTabViewController.swift */; };
+		8F56AF272890538200652022 /* PlanTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56AF262890538200652022 /* PlanTabViewController.swift */; };
+		8F56AF29289054CC00652022 /* RelaxTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56AF28289054CC00652022 /* RelaxTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		8F56AF16288F3B2A00652022 /* Read_Me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Read_Me.txt; sourceTree = "<group>"; };
 		8F56AF17288F3B2A00652022 /* Typo_Round_Italic_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typo_Round_Italic_Demo.otf; sourceTree = "<group>"; };
 		8F56AF18288F3B2A00652022 /* Typo_Round_Thin_Italic Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typo_Round_Thin_Italic Demo.otf"; sourceTree = "<group>"; };
+		8F56AF242890301E00652022 /* ControlTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlTabViewController.swift; sourceTree = "<group>"; };
+		8F56AF262890538200652022 /* PlanTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTabViewController.swift; sourceTree = "<group>"; };
+		8F56AF28289054CC00652022 /* RelaxTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,9 @@
 				8F56AED3288AE2A400652022 /* SceneDelegate.swift */,
 				8F56AED5288AE2A400652022 /* ViewController.swift */,
 				8F56AED7288AE2A400652022 /* Main.storyboard */,
+				8F56AF28289054CC00652022 /* RelaxTabViewController.swift */,
+				8F56AF262890538200652022 /* PlanTabViewController.swift */,
+				8F56AF242890301E00652022 /* ControlTabViewController.swift */,
 				8F56AF0D288F3B2A00652022 /* typo-round */,
 				8F56AEE5288CDB1600652022 /* LoginViewController.swift */,
 				8F56AEFF288F0E8E00652022 /* aoki-font */,
@@ -275,7 +284,10 @@
 				8F56AEE8288CDB3700652022 /* SignupViewController.swift in Sources */,
 				8F56AED2288AE2A400652022 /* AppDelegate.swift in Sources */,
 				8F56AED4288AE2A400652022 /* SceneDelegate.swift in Sources */,
+				8F56AF252890301E00652022 /* ControlTabViewController.swift in Sources */,
 				8F56AEF5288E3A7A00652022 /* HomeViewController.swift in Sources */,
+				8F56AF272890538200652022 /* PlanTabViewController.swift in Sources */,
+				8F56AF29289054CC00652022 /* RelaxTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

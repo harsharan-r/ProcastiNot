@@ -104,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="437.38317757009344" y="-581.85745140388769"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Item-->
         <scene sceneID="WfF-yV-mhp">
             <objects>
                 <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dae-RK-Qdv" customClass="HomeViewController" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,7 +147,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.17254901960784313" green="0.18823529411764706" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="Hf7-OD-h9g">
+                                    <tabBarItem title="test" id="Hf7-OD-h9g">
                                         <color key="badgeColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tabBarItem>
                                     <tabBarItem systemItem="more" id="xVQ-t1-zos">
@@ -162,6 +162,9 @@
                         <viewLayoutGuide key="safeArea" id="eDv-25-IpD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="hWo-Ht-MOj">
+                        <color key="badgeColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="blueBackground" destination="ZtN-ch-Q0h" id="zop-mF-RD9"/>
                         <outlet property="greeting" destination="WMU-De-S9e" id="KK8-Vb-BvF"/>
@@ -172,6 +175,59 @@
                 <exit id="sjn-Ye-QY4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1118.6915887850466" y="-570.84233261339102"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="wCq-PZ-4Kt">
+            <objects>
+                <viewController id="iaR-4e-eoN" customClass="PlanTabViewController" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uVg-sG-4qg">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient background" translatesAutoresizingMaskIntoConstraints="NO" id="JNk-UI-IHj">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV0-59-yAv">
+                                <rect key="frame" x="303" y="44" width="94" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log Out" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="14"/>
+                                    <color key="baseBackgroundColor" red="0.1725490093" green="0.19607841970000001" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LogOut:" destination="sjn-Ye-QY4" eventType="touchUpInside" id="P2s-qh-SSf"/>
+                                    <action selector="Logout:" destination="sjn-Ye-QY4" eventType="touchUpInside" id="7gp-2H-4gu"/>
+                                    <action selector="Logout:" destination="iaR-4e-eoN" eventType="touchUpInside" id="Z1j-t4-5oE"/>
+                                    <action selector="Logout:" destination="dae-RK-Qdv" eventType="touchUpInside" id="hOn-ix-S8X"/>
+                                    <action selector="signupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QiZ-kS-Bfq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYI-RF-CKt">
+                                <rect key="frame" x="45" y="108" width="339" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Background" translatesAutoresizingMaskIntoConstraints="NO" id="zEa-8k-NaR">
+                                <rect key="frame" x="0.0" y="228" width="428" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AqD-4M-oHQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Kuq-se-TH5"/>
+                    <connections>
+                        <outlet property="blueBackground" destination="zEa-8k-NaR" id="mOK-iI-gCw"/>
+                        <outlet property="greeting" destination="fYI-RF-CKt" id="Vl6-UJ-GFq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0E-ZV-EWK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="-571"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="slO-1c-Vpc">
@@ -249,7 +305,229 @@
             </objects>
             <point key="canvasLocation" x="-226.08695652173915" y="-575.22321428571422"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BmJ-4L-9bn">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qxg-Mq-4va" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8aK-of-rYH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dae-RK-Qdv" kind="relationship" relationship="viewControllers" id="rS6-Vj-gZE"/>
+                        <segue destination="iaR-4e-eoN" kind="relationship" relationship="viewControllers" id="6c5-D0-BK5"/>
+                        <segue destination="4r9-r9-kPb" kind="relationship" relationship="viewControllers" id="7Nm-PC-O6J"/>
+                        <segue destination="dig-ik-amj" kind="relationship" relationship="viewControllers" id="Qed-WK-nIE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Crq-Mb-Tok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="-1378"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="qkX-B0-77i">
+            <objects>
+                <viewController id="4r9-r9-kPb" customClass="ControlTabViewController" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aRG-Ur-JPB">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient background" translatesAutoresizingMaskIntoConstraints="NO" id="P9i-E9-Y8e">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGD-y1-gd2">
+                                <rect key="frame" x="303" y="44" width="94" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log Out" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="14"/>
+                                    <color key="baseBackgroundColor" red="0.1725490093" green="0.19607841970000001" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LogOut:" destination="sjn-Ye-QY4" eventType="touchUpInside" id="Vwx-jf-xkT"/>
+                                    <action selector="Logout:" destination="dae-RK-Qdv" eventType="touchUpInside" id="aGb-X1-rt8"/>
+                                    <action selector="Logout:" destination="sjn-Ye-QY4" eventType="touchUpInside" id="oXV-tk-b2j"/>
+                                    <action selector="Logout:" destination="4r9-r9-kPb" eventType="touchUpInside" id="xSU-fI-dmX"/>
+                                    <action selector="signupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jz7-2F-Pkl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDK-zY-45v">
+                                <rect key="frame" x="45" y="108" width="339" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Background" translatesAutoresizingMaskIntoConstraints="NO" id="Uwb-0B-GbD">
+                                <rect key="frame" x="0.0" y="228" width="428" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dh5-Zz-We1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="gUr-0k-3vf"/>
+                    <connections>
+                        <outlet property="blueBackground" destination="Uwb-0B-GbD" id="sex-j7-vrY"/>
+                        <outlet property="greeting" destination="WDK-zY-45v" id="6E6-A3-6fe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihh-cL-e4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2574" y="-575"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="DfV-U5-XGm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dig-ik-amj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7nj-Ha-WJj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vZl-8r-979">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LrU-ib-xrf" kind="show" id="bDI-RX-mON"/>
+                        <segue destination="LrU-ib-xrf" kind="relationship" relationship="rootViewController" id="ooE-iy-MaT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDj-VB-8Q5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3344.8598130841119" y="-571.49028077753781"/>
+        </scene>
+        <!--Relax Tab-->
+        <scene sceneID="Lre-pM-e69">
+            <objects>
+                <viewController title="Relax Tab" id="LrU-ib-xrf" customClass="RelaxTabViewController" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fVh-0Q-rTU">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient background" translatesAutoresizingMaskIntoConstraints="NO" id="bbV-h3-874">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRP-LS-VNg">
+                                <rect key="frame" x="303" y="44" width="94" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log Out" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="14"/>
+                                    <color key="baseBackgroundColor" red="0.1725490093" green="0.19607841970000001" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LogOut:" destination="sjn-Ye-QY4" eventType="touchUpInside" id="UTx-nr-5yh"/>
+                                    <action selector="Logout:" destination="sjn-Ye-QY4" eventType="touchUpInside" id="2kc-y7-HKd"/>
+                                    <action selector="Logout:" destination="dae-RK-Qdv" eventType="touchUpInside" id="m8a-kc-r5c"/>
+                                    <action selector="Logout:" destination="LrU-ib-xrf" eventType="touchUpInside" id="pfy-wU-dnu"/>
+                                    <action selector="signupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9a-Kg-ZjI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gde-tl-xFX">
+                                <rect key="frame" x="45" y="108" width="339" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Background" translatesAutoresizingMaskIntoConstraints="NO" id="jQ8-9G-tN8">
+                                <rect key="frame" x="0.0" y="228" width="428" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ns-1E-cRc">
+                                <rect key="frame" x="139" y="388" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Fa5-Jr-0uK"/>
+                                    <constraint firstAttribute="height" constant="150" id="Rup-DB-SJK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="vKU-aC-DGV" kind="show" id="cHL-ug-YuZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BQp-8D-kYf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0ns-1E-cRc" firstAttribute="centerY" secondItem="fVh-0Q-rTU" secondAttribute="centerY" id="g7z-JB-Eqh"/>
+                            <constraint firstItem="0ns-1E-cRc" firstAttribute="centerX" secondItem="fVh-0Q-rTU" secondAttribute="centerX" id="z05-Fg-A1n"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="BYR-se-oQx"/>
+                    <navigationItem key="navigationItem" id="cdQ-Uq-coy"/>
+                    <connections>
+                        <outlet property="blueBackground" destination="jQ8-9G-tN8" id="zKt-pB-o9t"/>
+                        <outlet property="greeting" destination="gde-tl-xFX" id="q7r-ec-iDm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z10-jq-weq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4212.6168224299063" y="-560.47516198704113"/>
+        </scene>
+        <!--Relax Tab-->
+        <scene sceneID="hlB-ZX-OuK">
+            <objects>
+                <viewController title="Relax Tab" id="vKU-aC-DGV" customClass="RelaxTabViewController" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ADy-aJ-d81">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient background" translatesAutoresizingMaskIntoConstraints="NO" id="Pvo-LA-R4h">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWb-iS-s35">
+                                <rect key="frame" x="303" y="44" width="94" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log Out" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="14"/>
+                                    <color key="baseBackgroundColor" red="0.1725490093" green="0.19607841970000001" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LogOut:" destination="sjn-Ye-QY4" eventType="touchUpInside" id="5Dc-Me-d9H"/>
+                                    <action selector="Logout:" destination="vKU-aC-DGV" eventType="touchUpInside" id="apj-aN-3gN"/>
+                                    <action selector="Logout:" destination="dae-RK-Qdv" eventType="touchUpInside" id="kxB-Wd-yG8"/>
+                                    <action selector="Logout:" destination="sjn-Ye-QY4" eventType="touchUpInside" id="xXu-AE-qNU"/>
+                                    <action selector="signupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARC-Ir-s6a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plo-Yj-jVD">
+                                <rect key="frame" x="45" y="108" width="339" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Background" translatesAutoresizingMaskIntoConstraints="NO" id="kw8-2I-AMk">
+                                <rect key="frame" x="0.0" y="228" width="428" height="750"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LTh-fn-PlG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="vhg-ec-bfu"/>
+                    <navigationItem key="navigationItem" id="XCM-RF-N9p"/>
+                    <connections>
+                        <outlet property="blueBackground" destination="kw8-2I-AMk" id="4gC-Sa-RmJ"/>
+                        <outlet property="greeting" destination="plo-Yj-jVD" id="ubn-pk-MyF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QhF-54-EAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5137.8504672897197" y="-560.47516198704113"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ooE-iy-MaT"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Blue Background" width="640" height="360"/>
         <image name="Gradient background" width="1920" height="1080"/>

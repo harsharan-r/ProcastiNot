@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
         if(Auth.auth().currentUser != nil){
             print(Auth.auth().currentUser!.uid)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "Home")
+            let vc = storyboard.instantiateViewController(withIdentifier: "tabBar")
             vc.modalPresentationStyle = .overFullScreen
             present(vc, animated: true)
         }
