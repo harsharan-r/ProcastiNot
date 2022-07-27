@@ -104,6 +104,18 @@ class RelaxTabViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    @IBAction func PlayButtonForTedTalk(_ sender: Any) {
+        if let url = URL(string: "https://youtu.be/arj7oStGLkU") {
+          UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+   
+    }
+    
+    @IBAction func PlayButtonForSteps(_ sender: Any) {
+        if let url = URL(string: "https://youtu.be/irp5ghCVNAM") {
+          UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 

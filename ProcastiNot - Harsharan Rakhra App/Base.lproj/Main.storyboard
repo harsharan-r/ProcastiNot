@@ -544,7 +544,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plo-Yj-jVD">
-                                <rect key="frame" x="45" y="108" width="339" height="53"/>
+                                <rect key="frame" x="45" y="154" width="339" height="49.333333333333343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -554,6 +554,73 @@
                                 <rect key="frame" x="0.0" y="228" width="428" height="750"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1w-aU-YT5">
+                                <rect key="frame" x="23" y="724" width="382" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Get started on your ProcastiNot journey by completing all these steps with this app
+</string>
+                                <fontDescription key="fontDescription" name="TypoRoundBoldDemo" family="Typo Round Bold Demo" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDU-wl-vGg">
+                                <rect key="frame" x="27" y="483" width="391" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Tips to Prevent Procrastination 
+
+1. Get Organized 
+2. Eliminate Distractions
+3. Prioritize
+4. Set Goals
+5. Set Deadlines
+6. Take a break
+7. Reward Yourself
+8. Hold Yourself Accountable
+</string>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mind of a procastinator" translatesAutoresizingMaskIntoConstraints="NO" id="VOz-Zq-ew0">
+                                <rect key="frame" x="27" y="256" width="154" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TipsForProcastionation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xe-G4-s7K">
+                                <rect key="frame" x="27" y="360" width="154" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mind of a Procrastinator TedTalk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37z-gV-7sk">
+                                <rect key="frame" x="193" y="256" width="212" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Procrastination - 7 Steps to Cure" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96t-db-uIi">
+                                <rect key="frame" x="193" y="360" width="212" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV9-OO-IpQ">
+                                <rect key="frame" x="27" y="256" width="391" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="PlayButtonForTedTalk:" destination="vKU-aC-DGV" eventType="touchUpInside" id="EvU-3L-LC1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YY-Xc-ndA">
+                                <rect key="frame" x="27" y="360" width="357" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="PlayButtonForSteps:" destination="vKU-aC-DGV" eventType="touchUpInside" id="1OT-iv-1FL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LTh-fn-PlG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -569,78 +636,6 @@
             </objects>
             <point key="canvasLocation" x="5137.8504672897197" y="-560.47516198704113"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="QEV-ZY-7tz">
-            <objects>
-                <viewController id="nhh-ra-rsC" customClass="TableViewController" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kvh-CY-rQd">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8Rf-si-Hgy">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCellID" rowHeight="100" id="PeU-Nm-blE" customClass="TableViewCell" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PeU-Nm-blE" id="aAx-CT-jtg">
-                                            <rect key="frame" x="0.0" y="0.0" width="428" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="zf1-WU-qXE">
-                                                    <rect key="frame" x="10" y="10" width="150" height="80"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="M2t-ZG-54s"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HE1-Q3-7en">
-                                                    <rect key="frame" x="170" y="21" width="228" height="58"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="HE1-Q3-7en" firstAttribute="leading" secondItem="zf1-WU-qXE" secondAttribute="trailing" constant="10" id="5m6-oA-4yf"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="HE1-Q3-7en" secondAttribute="trailing" constant="10" id="8IP-Xh-QMt"/>
-                                                <constraint firstAttribute="bottom" secondItem="zf1-WU-qXE" secondAttribute="bottom" constant="10" id="BQk-gI-mgd"/>
-                                                <constraint firstItem="zf1-WU-qXE" firstAttribute="top" secondItem="aAx-CT-jtg" secondAttribute="top" constant="10" id="gFg-Dn-om1"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="HE1-Q3-7en" secondAttribute="bottom" constant="10" id="kSD-MI-0jK"/>
-                                                <constraint firstItem="HE1-Q3-7en" firstAttribute="top" secondItem="aAx-CT-jtg" secondAttribute="topMargin" constant="10" id="rNy-cR-alo"/>
-                                                <constraint firstItem="zf1-WU-qXE" firstAttribute="leading" secondItem="aAx-CT-jtg" secondAttribute="leading" constant="10" id="s86-mS-nD3"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="thumbnail" destination="zf1-WU-qXE" id="mu7-F8-HMR"/>
-                                            <outlet property="title" destination="HE1-Q3-7en" id="qNL-Fj-dZ9"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="nhh-ra-rsC" id="5fO-s9-YEp"/>
-                                    <outlet property="delegate" destination="nhh-ra-rsC" id="jmN-CW-Hp6"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="lTL-yt-7Lg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="8Rf-si-Hgy" firstAttribute="leading" secondItem="lTL-yt-7Lg" secondAttribute="leading" id="4Im-B2-xnG"/>
-                            <constraint firstItem="lTL-yt-7Lg" firstAttribute="bottom" secondItem="8Rf-si-Hgy" secondAttribute="bottom" id="TKf-Ib-2CT"/>
-                            <constraint firstItem="lTL-yt-7Lg" firstAttribute="trailing" secondItem="8Rf-si-Hgy" secondAttribute="trailing" id="fA0-9g-1eJ"/>
-                            <constraint firstItem="8Rf-si-Hgy" firstAttribute="top" secondItem="lTL-yt-7Lg" secondAttribute="top" id="vLM-gS-zIm"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="4Vv-8C-FUi"/>
-                    <connections>
-                        <outlet property="tableView" destination="8Rf-si-Hgy" id="NhH-Hd-8EG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TdD-np-zaa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5992.9906542056069" y="-586.39308855291586"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ooE-iy-MaT"/>
@@ -649,8 +644,10 @@
         <image name="Blue Background" width="640" height="360"/>
         <image name="Gradient background" width="1920" height="1080"/>
         <image name="Image1" width="1096" height="717"/>
+        <image name="Mind of a procastinator" width="720" height="404"/>
         <image name="PlayButton" width="220" height="147"/>
         <image name="ProcastiNOT (2)" width="1500" height="1500"/>
+        <image name="TipsForProcastionation" width="720" height="404"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="checklist" catalog="system" width="128" height="105"/>
         <image name="firebase_28dp.png" width="56" height="56"/>
