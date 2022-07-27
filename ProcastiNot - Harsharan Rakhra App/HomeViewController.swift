@@ -10,16 +10,14 @@ import FirebaseAuth
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var tabBar: UITabBar!
+
     @IBOutlet weak var greeting: UILabel!
     @IBOutlet weak var blueBackground: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         blueBackground.layer.cornerRadius = 49
-        tabBar.layer.cornerRadius = 49
-        tabBar.layer.masksToBounds = true
-        tabBar.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+
 
         // Do any additional setup after loading the view.
     }

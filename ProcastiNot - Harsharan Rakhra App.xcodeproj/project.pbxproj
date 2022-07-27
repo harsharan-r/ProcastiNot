@@ -44,6 +44,8 @@
 		8F56AF252890301E00652022 /* ControlTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56AF242890301E00652022 /* ControlTabViewController.swift */; };
 		8F56AF272890538200652022 /* PlanTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56AF262890538200652022 /* PlanTabViewController.swift */; };
 		8F56AF29289054CC00652022 /* RelaxTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56AF28289054CC00652022 /* RelaxTabViewController.swift */; };
+		8F56AF2F289194FF00652022 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56AF2E289194FF00652022 /* TableViewController.swift */; };
+		8F56AF312891951200652022 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56AF302891951200652022 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		8F56AF242890301E00652022 /* ControlTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlTabViewController.swift; sourceTree = "<group>"; };
 		8F56AF262890538200652022 /* PlanTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTabViewController.swift; sourceTree = "<group>"; };
 		8F56AF28289054CC00652022 /* RelaxTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTabViewController.swift; sourceTree = "<group>"; };
+		8F56AF2E289194FF00652022 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8F56AF302891951200652022 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 				8F56AEDA288AE2A500652022 /* Assets.xcassets */,
 				8F56AEDC288AE2A500652022 /* LaunchScreen.storyboard */,
 				8F56AEDF288AE2A500652022 /* Info.plist */,
+				8F56AF2E289194FF00652022 /* TableViewController.swift */,
+				8F56AF302891951200652022 /* TableViewCell.swift */,
 			);
 			path = "ProcastiNot - Harsharan Rakhra App";
 			sourceTree = "<group>";
@@ -282,8 +288,10 @@
 				8F56AEE6288CDB1600652022 /* LoginViewController.swift in Sources */,
 				8F56AED6288AE2A400652022 /* ViewController.swift in Sources */,
 				8F56AEE8288CDB3700652022 /* SignupViewController.swift in Sources */,
+				8F56AF2F289194FF00652022 /* TableViewController.swift in Sources */,
 				8F56AED2288AE2A400652022 /* AppDelegate.swift in Sources */,
 				8F56AED4288AE2A400652022 /* SceneDelegate.swift in Sources */,
+				8F56AF312891951200652022 /* TableViewCell.swift in Sources */,
 				8F56AF252890301E00652022 /* ControlTabViewController.swift in Sources */,
 				8F56AEF5288E3A7A00652022 /* HomeViewController.swift in Sources */,
 				8F56AF272890538200652022 /* PlanTabViewController.swift in Sources */,
