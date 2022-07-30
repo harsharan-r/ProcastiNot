@@ -142,16 +142,122 @@
                                 <rect key="frame" x="0.0" y="228" width="428" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4km-Ga-Tby">
+                                <rect key="frame" x="20" y="278" width="268" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xsm-BF-HYo">
+                                <rect key="frame" x="303" y="278" width="105" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4o-xe-cy3">
+                                <rect key="frame" x="20" y="237" width="268" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S03-kN-BBl">
+                                <rect key="frame" x="20" y="327" width="388" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="388" id="XfJ-wM-VS4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Task" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="22"/>
+                                    <color key="baseForegroundColor" red="0.17254901959999999" green="0.18823529410000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addTask:" destination="dae-RK-Qdv" eventType="touchUpInside" id="PqM-4j-ECl"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iQ3-YH-QfV">
+                                <rect key="frame" x="20" y="385" width="388" height="458"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="458" id="kIm-sr-EEp"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" red="0.1339831054" green="0.1470402777" blue="0.21340137719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTableCellID" rowHeight="75" id="4tV-z3-osV" customClass="TaskTableViewCell" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="388" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4tV-z3-osV" id="1Rb-F4-l83">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-XR-cm7">
+                                                    <rect key="frame" x="10" y="10" width="258" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="258" id="sUn-wM-flK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPr-HU-wjE">
+                                                    <rect key="frame" x="288" y="10" width="90" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="qLK-lT-qUT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2ac-XR-cm7" firstAttribute="top" secondItem="1Rb-F4-l83" secondAttribute="top" constant="10" id="Ap9-VW-9i4"/>
+                                                <constraint firstItem="XPr-HU-wjE" firstAttribute="top" secondItem="1Rb-F4-l83" secondAttribute="top" constant="10" id="C0K-Uz-86B"/>
+                                                <constraint firstAttribute="bottom" secondItem="XPr-HU-wjE" secondAttribute="bottom" constant="10" id="EFP-Ey-zOY"/>
+                                                <constraint firstItem="2ac-XR-cm7" firstAttribute="leading" secondItem="1Rb-F4-l83" secondAttribute="leading" constant="10" id="HjM-dX-HD8"/>
+                                                <constraint firstAttribute="trailing" secondItem="XPr-HU-wjE" secondAttribute="trailing" constant="10" id="KRD-XG-P7T"/>
+                                                <constraint firstAttribute="bottom" secondItem="2ac-XR-cm7" secondAttribute="bottom" constant="10" id="hmF-yW-Vik"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1339831054" green="0.1470402777" blue="0.21340137719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="date" destination="XPr-HU-wjE" id="ql7-4q-a7M"/>
+                                            <outlet property="task" destination="2ac-XR-cm7" id="VWD-i2-hwK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dae-RK-Qdv" id="Xka-40-k7L"/>
+                                    <outlet property="delegate" destination="dae-RK-Qdv" id="Ea2-Cw-FZa"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr9-JX-HgC">
+                                <rect key="frame" x="305" y="237" width="79" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eDv-25-IpD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="leading" secondItem="eDv-25-IpD" secondAttribute="leading" constant="20" id="9Lc-wo-NGU"/>
+                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="bottom" secondItem="eDv-25-IpD" secondAttribute="bottom" id="Ebb-hx-ObV"/>
+                            <constraint firstItem="S03-kN-BBl" firstAttribute="centerX" secondItem="87z-Qw-wFi" secondAttribute="centerX" id="ZJS-ZE-VQG"/>
+                            <constraint firstItem="eDv-25-IpD" firstAttribute="trailing" secondItem="iQ3-YH-QfV" secondAttribute="trailing" constant="20" id="w9e-mI-KQB"/>
+                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="top" secondItem="S03-kN-BBl" secondAttribute="bottom" constant="17" id="ztz-jk-nfg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="checklist" catalog="system" id="hWo-Ht-MOj">
                         <color key="badgeColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="blueBackground" destination="ZtN-ch-Q0h" id="zop-mF-RD9"/>
+                        <outlet property="due" destination="Xsm-BF-HYo" id="dE3-ra-ein"/>
                         <outlet property="greeting" destination="WMU-De-S9e" id="KK8-Vb-BvF"/>
+                        <outlet property="tableView" destination="iQ3-YH-QfV" id="eII-LV-iFg"/>
+                        <outlet property="task" destination="4km-Ga-Tby" id="J8S-3G-eZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKu-cp-IeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -198,19 +304,94 @@
                                 <rect key="frame" x="0.0" y="228" width="428" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlY-Em-NmE">
+                                <rect key="frame" x="20" y="244" width="388" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="388" id="efu-77-2WU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Calendar" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="22"/>
+                                    <color key="baseForegroundColor" red="0.17254901959999999" green="0.18823529410000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addTask:" destination="dae-RK-Qdv" eventType="touchUpInside" id="f9M-wE-aLW"/>
+                                    <action selector="calendarAppLink:" destination="iaR-4e-eoN" eventType="touchUpInside" id="13k-50-1Zx"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qmt-3i-21G">
+                                <rect key="frame" x="20" y="321" width="388" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planTableViewCell" rowHeight="75" id="wSC-yi-Kmj" customClass="PlanTableViewCell" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="388" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wSC-yi-Kmj" id="kiy-oV-Zgn">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sc-Q2-sb5">
+                                                    <rect key="frame" x="12" y="11" width="276" height="53"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="276" id="thy-B0-deU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOs-3s-OhJ">
+                                                    <rect key="frame" x="295.66666666666669" y="10" width="82.333333333333314" height="55"/>
+                                                    <color key="backgroundColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="54" id="5p9-jf-3YO"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Plan" cornerStyle="capsule">
+                                                        <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="20"/>
+                                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="planTaskButton:" destination="wSC-yi-Kmj" eventType="touchUpInside" id="ca7-fO-EW5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="1sc-Q2-sb5" secondAttribute="bottom" constant="11" id="BMf-zg-aOS"/>
+                                                <constraint firstAttribute="bottom" secondItem="bOs-3s-OhJ" secondAttribute="bottom" constant="10" id="Sn5-k7-xfP"/>
+                                                <constraint firstItem="1sc-Q2-sb5" firstAttribute="leading" secondItem="kiy-oV-Zgn" secondAttribute="leading" constant="12" id="bQL-xR-RTz"/>
+                                                <constraint firstAttribute="trailing" secondItem="bOs-3s-OhJ" secondAttribute="trailing" constant="10" id="hEv-oi-dx5"/>
+                                                <constraint firstItem="bOs-3s-OhJ" firstAttribute="top" secondItem="kiy-oV-Zgn" secondAttribute="top" constant="10" id="r66-kt-R5O"/>
+                                                <constraint firstItem="1sc-Q2-sb5" firstAttribute="top" secondItem="kiy-oV-Zgn" secondAttribute="top" constant="11" id="uy2-5z-ZdV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="PlanButton" destination="bOs-3s-OhJ" id="7rU-PE-mUo"/>
+                                            <outlet property="TaskLabel" destination="1sc-Q2-sb5" id="OGC-tD-QX4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iaR-4e-eoN" id="HrT-MF-AiG"/>
+                                    <outlet property="delegate" destination="iaR-4e-eoN" id="SIs-yD-YuT"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AqD-4M-oHQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Plan" image="calendar" catalog="system" id="Kuq-se-TH5"/>
+                    <navigationItem key="navigationItem" id="90h-0U-hzg"/>
                     <connections>
                         <outlet property="blueBackground" destination="zEa-8k-NaR" id="mOK-iI-gCw"/>
                         <outlet property="greeting" destination="fYI-RF-CKt" id="Vl6-UJ-GFq"/>
+                        <outlet property="tableView" destination="qmt-3i-21G" id="9fo-ZB-2Wr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0E-ZV-EWK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845" y="-571"/>
+            <point key="canvasLocation" x="1858.8785046728972" y="117.92656587473003"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="slO-1c-Vpc">
@@ -295,13 +476,15 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8aK-of-rYH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.17254901959999999" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="dae-RK-Qdv" kind="relationship" relationship="viewControllers" id="rS6-Vj-gZE"/>
-                        <segue destination="iaR-4e-eoN" kind="relationship" relationship="viewControllers" id="6c5-D0-BK5"/>
-                        <segue destination="4r9-r9-kPb" kind="relationship" relationship="viewControllers" id="7Nm-PC-O6J"/>
-                        <segue destination="dig-ik-amj" kind="relationship" relationship="viewControllers" id="GJS-0i-GMf"/>
+                        <segue destination="wGb-v0-M0J" kind="relationship" relationship="viewControllers" id="0SG-WY-MYW"/>
+                        <segue destination="4r9-r9-kPb" kind="relationship" relationship="viewControllers" id="cEm-S9-xgX"/>
+                        <segue destination="dig-ik-amj" kind="relationship" relationship="viewControllers" id="ImN-OU-KGk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Crq-Mb-Tok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -360,6 +543,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihh-cL-e4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2574" y="-575"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="I8r-wr-aaY">
+            <objects>
+                <navigationController id="wGb-v0-M0J" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ntd-5z-f3n"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aaE-J7-FRs">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iaR-4e-eoN" kind="relationship" relationship="rootViewController" id="f8L-Gs-sun"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrY-cn-qqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="-571"/>
         </scene>
         <!--Item-->
         <scene sceneID="DfV-U5-XGm">
@@ -523,6 +723,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gY0-XX-vG1">
+                                <rect key="frame" x="23" y="181" width="339" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient background" translatesAutoresizingMaskIntoConstraints="NO" id="Pvo-LA-R4h">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="285"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -543,19 +750,12 @@
                                     <action selector="signupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARC-Ir-s6a"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plo-Yj-jVD">
-                                <rect key="frame" x="45" y="154" width="339" height="49.333333333333343"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Background" translatesAutoresizingMaskIntoConstraints="NO" id="kw8-2I-AMk">
-                                <rect key="frame" x="0.0" y="228" width="428" height="750"/>
+                                <rect key="frame" x="0.0" y="113" width="428" height="865"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1w-aU-YT5">
-                                <rect key="frame" x="23" y="724" width="382" height="175"/>
+                                <rect key="frame" x="23" y="677" width="382" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Get started on your ProcastiNot journey by completing all these steps with this app
 </string>
@@ -564,7 +764,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDU-wl-vGg">
-                                <rect key="frame" x="27" y="483" width="391" height="270"/>
+                                <rect key="frame" x="25" y="410" width="391" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Tips to Prevent Procrastination 
 
@@ -582,29 +782,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mind of a procastinator" translatesAutoresizingMaskIntoConstraints="NO" id="VOz-Zq-ew0">
-                                <rect key="frame" x="27" y="256" width="154" height="96"/>
+                                <rect key="frame" x="25" y="159" width="154" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TipsForProcastionation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xe-G4-s7K">
-                                <rect key="frame" x="27" y="360" width="154" height="96"/>
+                                <rect key="frame" x="26" y="263" width="154" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mind of a Procrastinator TedTalk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37z-gV-7sk">
-                                <rect key="frame" x="193" y="256" width="212" height="96"/>
+                                <rect key="frame" x="190" y="159" width="212" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Procrastination - 7 Steps to Cure" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96t-db-uIi">
-                                <rect key="frame" x="193" y="360" width="212" height="96"/>
+                                <rect key="frame" x="192" y="263" width="212" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV9-OO-IpQ">
-                                <rect key="frame" x="27" y="256" width="391" height="96"/>
+                                <rect key="frame" x="20" y="159" width="391" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -613,7 +813,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YY-Xc-ndA">
-                                <rect key="frame" x="27" y="360" width="357" height="96"/>
+                                <rect key="frame" x="25" y="263" width="357" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -629,7 +829,7 @@
                     <navigationItem key="navigationItem" id="XCM-RF-N9p"/>
                     <connections>
                         <outlet property="blueBackground" destination="kw8-2I-AMk" id="4gC-Sa-RmJ"/>
-                        <outlet property="greeting" destination="plo-Yj-jVD" id="ubn-pk-MyF"/>
+                        <outlet property="greeting" destination="gY0-XX-vG1" id="cdE-eI-LeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhF-54-EAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

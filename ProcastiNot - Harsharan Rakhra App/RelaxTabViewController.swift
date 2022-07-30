@@ -23,7 +23,7 @@ class RelaxTabViewController: UIViewController, UITableViewDataSource, UITableVi
         let url: String
     }
     
-    var videos: [Video ] = [
+    var videos: [Video] = [
         Video(title: "10-Minute Meditation For Stress", thumbnail: "10-Minute Meditation For Stress", url: "https://youtu.be/z6X5oEIg6Ak"),
         Video(title: "5-Minute De-Stress Meditation", thumbnail: "5-Minute De-Stress Meditation", url: "https://youtu.be/9yj8mBfHlMk"),
         Video(title: "Mental Reset in 5 Minutes - Guided Meditation", thumbnail: "Mental Reset in 5 Minutes - Guided Meditation", url: "https://youtu.be/O39OqqYGycs"),
@@ -40,29 +40,6 @@ class RelaxTabViewController: UIViewController, UITableViewDataSource, UITableVi
         greeting.text = "Hi \(Auth.auth().currentUser?.displayName ?? "No Username")"
         greeting.sizeToFit()
         
-        self.getthumbnailFromImage(url: URL(string:  "https://www.youtube.com/watch?v=nQ7XbH19MkU")!) { thumbImage in
-            self.videoImage.image = thumbImage
-
-        }
-    }
-    
-    func getthumbnailFromImage(url: URL, completion: @escaping ((_ image: UIImage)-> Void)){
-        DispatchQueue.global().async {
-            let asset = AVAsset(url: url)
-            let avAssetImageGenerator = AVAssetImageGenerator(asset: asset)
-            avAssetImageGenerator.appliesPreferredTrackTransform = true
-            
-            let thumbnailTime = CMTimeMake(value: 7, timescale: 1)
-            do {
-                let cgThumbImage = try avAssetImageGenerator.copyCGImage(at: thumbnailTime, actualTime: nil)
-                let thumbImage = UIImage(cgImage: cgThumbImage)
-                DispatchQueue.main.async {
-                    completion(thumbImage)
-                }
-            }catch {
-                print(error.localizedDescription)
-            }
-        }
     }
     
 

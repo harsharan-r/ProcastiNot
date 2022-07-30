@@ -65,15 +65,6 @@ class SignupViewController: UIViewController {
         Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (user, error) in
             if(error == nil && user != nil){
                 
-                /*auto signing in after user creation
-                 Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!) { [weak self] authResult, error in
-                    guard self != nil else {return}
-                    if let error = error{
-                        print(error.localizedDescription)
-                    }else {
-                    }
-                }*/
-                
                 let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
                 changeRequest?.displayName = self.username.text!
                 changeRequest?.commitChanges { error in

@@ -8,11 +8,24 @@
 import UIKit
 import FirebaseAuth
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 
     @IBOutlet weak var greeting: UILabel!
     @IBOutlet weak var blueBackground: UIImageView!
+    
+ 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var task: UITextField!
+    @IBOutlet weak var due: UITextField!
+    
+    
+    struct Task{
+        var task: String!
+        var dueDate: String!
+    }
+    
+    var tasks: [Task] = [Task(task: "it works", dueDate: "test"), Task(task: "test", dueDate:"test")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +56,52 @@ class HomeViewController: UIViewController {
         self.present(vc, animated: true)
     }
     
+    @IBAction func addTask(_ sender: Any) {
+        validateFields()
+        
+    }
+    
+    func validateFields(){
+        if(task.text?.isEmpty == true){
+            print("No Task Text")
+            return
+        }
+        
+        if(due.text?.isEmpty == true){
+            print("No Due Text")
+            return
+        }
+        
+        storeData()
+    }
+    
+    func storeData(){
+        tasks.append(Task(task: task.text, dueDate: due.text))
+        tableView.reloadData()
+        task.text = ""
+        due.text = ""
+        print("data Added")
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return tasks.count
+
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "TaskTableCellID") as! TaskTableViewCell
+        
+        let task = tasks[indexPath.row]
+        
+        tableViewCell.task.text = task.task
+        tableViewCell.date.text = task.dueDate
+        
+        return tableViewCell
+        
+                
+    }
     
     /*
     // MARK: - Navigation
