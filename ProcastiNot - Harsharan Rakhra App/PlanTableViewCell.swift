@@ -10,7 +10,8 @@ import UIKit
 class PlanTableViewCell: UITableViewCell {
 
     @IBOutlet weak var TaskLabel: UILabel!
-    @IBOutlet weak var PlanButton: UIButton!
+    @IBOutlet weak var PlanLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +23,6 @@ class PlanTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
 
 }

@@ -14,6 +14,9 @@
         <array key="Typo_Round_Bold_Demo.otf">
             <string>TypoRoundBoldDemo</string>
         </array>
+        <array key="Typo_Round_Regular_Demo.otf">
+            <string>TypoRoundRegularDemo</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Signup View Controller-->
@@ -131,9 +134,11 @@
                                     <action selector="signupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXl-UQ-iFO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMU-De-S9e">
-                                <rect key="frame" x="45" y="108" width="339" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMU-De-S9e">
+                                <rect key="frame" x="44.666666666666657" y="111.66666666666667" width="339" height="49.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="CEz-H3-Ohh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -142,45 +147,12 @@
                                 <rect key="frame" x="0.0" y="228" width="428" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4km-Ga-Tby">
-                                <rect key="frame" x="20" y="278" width="268" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xsm-BF-HYo">
-                                <rect key="frame" x="303" y="278" width="105" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4o-xe-cy3">
-                                <rect key="frame" x="20" y="237" width="268" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S03-kN-BBl">
-                                <rect key="frame" x="20" y="327" width="388" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="388" id="XfJ-wM-VS4"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Add Task" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="22"/>
-                                    <color key="baseForegroundColor" red="0.17254901959999999" green="0.18823529410000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="baseBackgroundColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="addTask:" destination="dae-RK-Qdv" eventType="touchUpInside" id="PqM-4j-ECl"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iQ3-YH-QfV">
-                                <rect key="frame" x="20" y="385" width="388" height="458"/>
+                                <rect key="frame" x="20" y="423" width="388" height="420"/>
                                 <color key="backgroundColor" red="0.17254901959999999" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="458" id="kIm-sr-EEp"/>
+                                    <constraint firstAttribute="width" constant="388" id="moj-e9-Dh9"/>
+                                    <constraint firstAttribute="height" constant="420" id="yFe-aJ-Wc9"/>
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" red="0.1339831054" green="0.1470402777" blue="0.21340137719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -196,7 +168,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="258" id="sUn-wM-flK"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TypoRoundBoldDemo" family="Typo Round Bold Demo" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -205,7 +177,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="qLK-lT-qUT"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TypoRoundBoldDemo" family="Typo Round Bold Demo" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -219,7 +191,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="2ac-XR-cm7" secondAttribute="bottom" constant="10" id="hmF-yW-Vik"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.1339831054" green="0.1470402777" blue="0.21340137719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="date" destination="XPr-HU-wjE" id="ql7-4q-a7M"/>
                                             <outlet property="task" destination="2ac-XR-cm7" id="VWD-i2-hwK"/>
@@ -231,9 +203,53 @@
                                     <outlet property="delegate" destination="dae-RK-Qdv" id="Ea2-Cw-FZa"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr9-JX-HgC">
-                                <rect key="frame" x="305" y="237" width="79" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4km-Ga-Tby">
+                                <rect key="frame" x="20" y="305" width="268" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="9ck-n6-aTb"/>
+                                    <constraint firstAttribute="width" constant="268" id="yNl-Tn-8ZK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xsm-BF-HYo">
+                                <rect key="frame" x="303" y="305" width="81" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5mg-zD-58f"/>
+                                    <constraint firstAttribute="width" constant="81" id="WiV-dQ-gIw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4o-xe-cy3">
+                                <rect key="frame" x="20" y="272" width="268" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="KIw-Ce-K1T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S03-kN-BBl">
+                                <rect key="frame" x="20" y="354" width="388" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="388" id="SSt-rB-Vcu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Task" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="22"/>
+                                    <color key="baseForegroundColor" red="0.17254901959999999" green="0.18823529410000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addTask:" destination="dae-RK-Qdv" eventType="touchUpInside" id="PqM-4j-ECl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr9-JX-HgC">
+                                <rect key="frame" x="305" y="272.33333333333331" width="79" height="24.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="EMA-8a-m4X"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -242,11 +258,25 @@
                         <viewLayoutGuide key="safeArea" id="eDv-25-IpD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="leading" secondItem="eDv-25-IpD" secondAttribute="leading" constant="20" id="9Lc-wo-NGU"/>
-                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="bottom" secondItem="eDv-25-IpD" secondAttribute="bottom" id="Ebb-hx-ObV"/>
-                            <constraint firstItem="S03-kN-BBl" firstAttribute="centerX" secondItem="87z-Qw-wFi" secondAttribute="centerX" id="ZJS-ZE-VQG"/>
-                            <constraint firstItem="eDv-25-IpD" firstAttribute="trailing" secondItem="iQ3-YH-QfV" secondAttribute="trailing" constant="20" id="w9e-mI-KQB"/>
-                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="top" secondItem="S03-kN-BBl" secondAttribute="bottom" constant="17" id="ztz-jk-nfg"/>
+                            <constraint firstItem="S03-kN-BBl" firstAttribute="top" secondItem="4km-Ga-Tby" secondAttribute="bottom" constant="15" id="0ut-Fc-mTY"/>
+                            <constraint firstItem="4km-Ga-Tby" firstAttribute="leading" secondItem="eDv-25-IpD" secondAttribute="leading" constant="20" id="6mz-oM-g0E"/>
+                            <constraint firstItem="S03-kN-BBl" firstAttribute="top" secondItem="4km-Ga-Tby" secondAttribute="bottom" constant="15" id="A5A-Xi-2hr"/>
+                            <constraint firstItem="qr9-JX-HgC" firstAttribute="leading" secondItem="e4o-xe-cy3" secondAttribute="trailing" constant="17" id="DCi-Cn-RKC"/>
+                            <constraint firstItem="qr9-JX-HgC" firstAttribute="top" secondItem="WMU-De-S9e" secondAttribute="bottom" constant="111.33" id="Dl6-t0-hIt"/>
+                            <constraint firstItem="qr9-JX-HgC" firstAttribute="leading" secondItem="e4o-xe-cy3" secondAttribute="trailing" constant="17" id="Fpw-tz-ggR"/>
+                            <constraint firstItem="Xsm-BF-HYo" firstAttribute="leading" secondItem="4km-Ga-Tby" secondAttribute="trailing" constant="15" id="LGl-AF-k20"/>
+                            <constraint firstItem="S03-kN-BBl" firstAttribute="centerX" secondItem="87z-Qw-wFi" secondAttribute="centerX" id="Ob1-Ml-LCA"/>
+                            <constraint firstItem="e4o-xe-cy3" firstAttribute="top" secondItem="WMU-De-S9e" secondAttribute="bottom" constant="111" id="Qki-1p-AVx"/>
+                            <constraint firstItem="S03-kN-BBl" firstAttribute="top" secondItem="Xsm-BF-HYo" secondAttribute="bottom" constant="15" id="RNG-OX-siV"/>
+                            <constraint firstItem="e4o-xe-cy3" firstAttribute="leading" secondItem="eDv-25-IpD" secondAttribute="leading" constant="20" id="T3i-Bc-sZR"/>
+                            <constraint firstItem="eDv-25-IpD" firstAttribute="trailing" secondItem="Xsm-BF-HYo" secondAttribute="trailing" constant="44" id="Vzi-Wq-nH4"/>
+                            <constraint firstItem="eDv-25-IpD" firstAttribute="trailing" secondItem="qr9-JX-HgC" secondAttribute="trailing" constant="44" id="glk-76-JHQ"/>
+                            <constraint firstItem="4km-Ga-Tby" firstAttribute="top" secondItem="e4o-xe-cy3" secondAttribute="bottom" constant="8" symbolic="YES" id="q0k-QD-hV0"/>
+                            <constraint firstItem="WMU-De-S9e" firstAttribute="centerX" secondItem="87z-Qw-wFi" secondAttribute="centerX" id="uE6-VL-NNH"/>
+                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="bottom" secondItem="eDv-25-IpD" secondAttribute="bottom" id="vRP-Ea-QsA"/>
+                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="top" secondItem="S03-kN-BBl" secondAttribute="bottom" constant="28" id="yii-UV-sr3"/>
+                            <constraint firstItem="iQ3-YH-QfV" firstAttribute="centerX" secondItem="87z-Qw-wFi" secondAttribute="centerX" id="zgT-lJ-2jP"/>
+                            <constraint firstItem="Xsm-BF-HYo" firstAttribute="top" secondItem="qr9-JX-HgC" secondAttribute="bottom" constant="8" symbolic="YES" id="zss-KO-Egk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="checklist" catalog="system" id="hWo-Ht-MOj">
@@ -268,7 +298,7 @@
         <!--Plan-->
         <scene sceneID="wCq-PZ-4Kt">
             <objects>
-                <viewController id="iaR-4e-eoN" customClass="PlanTabViewController" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Plan" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iaR-4e-eoN" customClass="PlanTabViewController" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uVg-sG-4qg">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,9 +323,11 @@
                                     <action selector="signupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QiZ-kS-Bfq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYI-RF-CKt">
-                                <rect key="frame" x="45" y="108" width="339" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYI-RF-CKt">
+                                <rect key="frame" x="44.666666666666657" y="111.66666666666667" width="339" height="49.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="PJE-Dn-AK5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -304,8 +336,8 @@
                                 <rect key="frame" x="0.0" y="228" width="428" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlY-Em-NmE">
-                                <rect key="frame" x="20" y="244" width="388" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlY-Em-NmE">
+                                <rect key="frame" x="20" y="263" width="388" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="388" id="efu-77-2WU"/>
                                 </constraints>
@@ -316,14 +348,16 @@
                                     <color key="baseBackgroundColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="addTask:" destination="dae-RK-Qdv" eventType="touchUpInside" id="f9M-wE-aLW"/>
-                                    <action selector="calendarAppLink:" destination="iaR-4e-eoN" eventType="touchUpInside" id="13k-50-1Zx"/>
+                                    <action selector="calenderTapped:" destination="iaR-4e-eoN" eventType="touchUpInside" id="5Hl-iS-hY5"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qmt-3i-21G">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qmt-3i-21G">
                                 <rect key="frame" x="20" y="321" width="388" height="522"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="522" id="GpN-3S-6Q2"/>
+                                    <constraint firstAttribute="width" constant="388" id="l7g-mz-tUE"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planTableViewCell" rowHeight="75" id="wSC-yi-Kmj" customClass="PlanTableViewCell" customModule="ProcastiNot___Harsharan_Rakhra_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="388" height="75"/>
@@ -333,41 +367,40 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sc-Q2-sb5">
-                                                    <rect key="frame" x="12" y="11" width="276" height="53"/>
+                                                    <rect key="frame" x="10" y="10" width="276" height="55"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="276" id="thy-B0-deU"/>
+                                                        <constraint firstAttribute="width" constant="276" id="2XQ-TA-Z6j"/>
+                                                        <constraint firstAttribute="height" constant="53" id="Fch-FI-Lc8"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="TypoRoundBoldDemo" family="Typo Round Bold Demo" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOs-3s-OhJ">
-                                                    <rect key="frame" x="295.66666666666669" y="10" width="82.333333333333314" height="55"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxp-1D-Z59">
+                                                    <rect key="frame" x="284" y="12" width="84" height="52"/>
                                                     <color key="backgroundColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="54" id="5p9-jf-3YO"/>
+                                                        <constraint firstAttribute="width" constant="84" id="Nfo-UW-UPX"/>
+                                                        <constraint firstAttribute="height" constant="52" id="gon-3d-dP4"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Plan" cornerStyle="capsule">
-                                                        <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="20"/>
-                                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </buttonConfiguration>
-                                                    <connections>
-                                                        <action selector="planTaskButton:" destination="wSC-yi-Kmj" eventType="touchUpInside" id="ca7-fO-EW5"/>
-                                                    </connections>
-                                                </button>
+                                                    <fontDescription key="fontDescription" name="TypoRoundRegularDemo" family="Typo Round Regular Demo" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="1sc-Q2-sb5" secondAttribute="bottom" constant="11" id="BMf-zg-aOS"/>
-                                                <constraint firstAttribute="bottom" secondItem="bOs-3s-OhJ" secondAttribute="bottom" constant="10" id="Sn5-k7-xfP"/>
-                                                <constraint firstItem="1sc-Q2-sb5" firstAttribute="leading" secondItem="kiy-oV-Zgn" secondAttribute="leading" constant="12" id="bQL-xR-RTz"/>
-                                                <constraint firstAttribute="trailing" secondItem="bOs-3s-OhJ" secondAttribute="trailing" constant="10" id="hEv-oi-dx5"/>
-                                                <constraint firstItem="bOs-3s-OhJ" firstAttribute="top" secondItem="kiy-oV-Zgn" secondAttribute="top" constant="10" id="r66-kt-R5O"/>
-                                                <constraint firstItem="1sc-Q2-sb5" firstAttribute="top" secondItem="kiy-oV-Zgn" secondAttribute="top" constant="11" id="uy2-5z-ZdV"/>
+                                                <constraint firstItem="lxp-1D-Z59" firstAttribute="leading" secondItem="kiy-oV-Zgn" secondAttribute="leadingMargin" constant="264" id="3HS-NA-980"/>
+                                                <constraint firstItem="lxp-1D-Z59" firstAttribute="top" secondItem="kiy-oV-Zgn" secondAttribute="topMargin" constant="1" id="IGS-pF-itO"/>
+                                                <constraint firstItem="1sc-Q2-sb5" firstAttribute="top" secondItem="kiy-oV-Zgn" secondAttribute="top" constant="10" id="K4I-5N-O1G"/>
+                                                <constraint firstItem="lxp-1D-Z59" firstAttribute="trailing" secondItem="kiy-oV-Zgn" secondAttribute="trailingMargin" id="Sh1-SB-bTc"/>
+                                                <constraint firstItem="1sc-Q2-sb5" firstAttribute="leading" secondItem="kiy-oV-Zgn" secondAttribute="leading" constant="10" id="T3T-Bw-n75"/>
+                                                <constraint firstAttribute="bottom" secondItem="1sc-Q2-sb5" secondAttribute="bottom" constant="10" id="vg4-Zz-WfW"/>
+                                                <constraint firstItem="lxp-1D-Z59" firstAttribute="bottom" secondItem="kiy-oV-Zgn" secondAttribute="bottomMargin" id="yLq-nH-aQr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
-                                            <outlet property="PlanButton" destination="bOs-3s-OhJ" id="7rU-PE-mUo"/>
+                                            <outlet property="PlanLabel" destination="lxp-1D-Z59" id="XGz-1b-103"/>
                                             <outlet property="TaskLabel" destination="1sc-Q2-sb5" id="OGC-tD-QX4"/>
                                         </connections>
                                     </tableViewCell>
@@ -377,9 +410,24 @@
                                     <outlet property="delegate" destination="iaR-4e-eoN" id="SIs-yD-YuT"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXC-JJ-ped">
+                                <rect key="frame" x="251" y="140" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TypoRoundBoldDemo" family="Typo Round Bold Demo" pointSize="0.0"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AqD-4M-oHQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qmt-3i-21G" firstAttribute="top" secondItem="XlY-Em-NmE" secondAttribute="bottom" constant="17" id="8fb-HL-l89"/>
+                            <constraint firstItem="fYI-RF-CKt" firstAttribute="centerX" secondItem="uVg-sG-4qg" secondAttribute="centerX" id="Ib7-Ef-ZuN"/>
+                            <constraint firstItem="XlY-Em-NmE" firstAttribute="centerX" secondItem="uVg-sG-4qg" secondAttribute="centerX" id="Tno-eW-w1o"/>
+                            <constraint firstItem="qmt-3i-21G" firstAttribute="bottom" secondItem="AqD-4M-oHQ" secondAttribute="bottom" id="iDq-Sj-F1x"/>
+                            <constraint firstItem="qmt-3i-21G" firstAttribute="centerX" secondItem="uVg-sG-4qg" secondAttribute="centerX" id="lWM-BI-hbo"/>
+                            <constraint firstItem="XlY-Em-NmE" firstAttribute="top" secondItem="fYI-RF-CKt" secondAttribute="bottom" constant="102" id="w3F-xj-udA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Plan" image="calendar" catalog="system" id="Kuq-se-TH5"/>
                     <navigationItem key="navigationItem" id="90h-0U-hzg"/>
@@ -519,9 +567,12 @@
                                     <action selector="signupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jz7-2F-Pkl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDK-zY-45v">
-                                <rect key="frame" x="45" y="108" width="339" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDK-zY-45v">
+                                <rect key="frame" x="44.666666666666657" y="111.66666666666667" width="339" height="49.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49.329999999999998" id="aKa-g6-GB1"/>
+                                    <constraint firstAttribute="width" constant="339" id="kiX-OJ-eJ5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -530,19 +581,98 @@
                                 <rect key="frame" x="0.0" y="228" width="428" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBF-W6-cAs">
+                                <rect key="frame" x="38" y="278" width="352" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="352" id="9LP-uP-nGg"/>
+                                    <constraint firstAttribute="height" constant="45" id="ANP-04-cbD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Select App" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="Aoki-Regular" family="Aoki" pointSize="25"/>
+                                    <color key="baseBackgroundColor" red="0.17254901960784313" green="0.18823529411764706" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSelectAppTapped:" destination="4r9-r9-kPb" eventType="touchUpInside" id="ZkX-x6-pxs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Db-If-f7q">
+                                <rect key="frame" x="38" y="438" width="226" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oas-pR-oH2">
+                                <rect key="frame" x="326" y="448" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="notificationSwitchTapped:" destination="4r9-r9-kPb" eventType="valueChanged" id="thD-ln-Jlm"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APp Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-Iq-uwe">
+                                <rect key="frame" x="38" y="502" width="226" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n4y-T3-b33">
+                                <rect key="frame" x="326" y="512" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="automaticSwtichTapped:" destination="4r9-r9-kPb" eventType="valueChanged" id="Aur-PX-ZUO"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Automatic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9W-a8-Sra">
+                                <rect key="frame" x="38" y="618" width="226" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Aoki-Regular" family="Aoki" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="22I-FW-lck">
+                                <rect key="frame" x="326" y="628" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.92549026010000002" green="0.3686274886" blue="0.4941176176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="automaticSwitchTapped:" destination="4r9-r9-kPb" eventType="valueChanged" id="3Hw-o7-Hvk"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This blocks the app and its notifications when you have scheduled tasks and between late night hours (12-5) to promote sleep" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-QG-DKu">
+                                <rect key="frame" x="38" y="665" width="335" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TypoRoundRegularDemo" family="Typo Round Regular Demo" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dh5-Zz-We1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WDK-zY-45v" firstAttribute="centerX" secondItem="aRG-Ur-JPB" secondAttribute="centerX" id="Z8A-1L-Wow"/>
+                            <constraint firstItem="Dh5-Zz-We1" firstAttribute="bottom" secondItem="wBF-W6-cAs" secondAttribute="bottom" constant="520" id="dIC-hC-fPr"/>
+                            <constraint firstItem="wBF-W6-cAs" firstAttribute="top" secondItem="WDK-zY-45v" secondAttribute="bottom" constant="117" id="evL-IR-PH1"/>
+                            <constraint firstItem="wBF-W6-cAs" firstAttribute="centerX" secondItem="aRG-Ur-JPB" secondAttribute="centerX" id="uIo-YD-rqW"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Control" image="lock" catalog="system" id="gUr-0k-3vf"/>
                     <connections>
+                        <outlet property="appBlockSwitch" destination="n4y-T3-b33" id="5BJ-6l-uxs"/>
+                        <outlet property="automaticSwitch" destination="22I-FW-lck" id="j8a-yP-Se6"/>
                         <outlet property="blueBackground" destination="Uwb-0B-GbD" id="sex-j7-vrY"/>
                         <outlet property="greeting" destination="WDK-zY-45v" id="6E6-A3-6fe"/>
+                        <outlet property="notificationSwitch" destination="Oas-pR-oH2" id="Obh-uR-mXn"/>
+                        <outlet property="selectAppButton" destination="wBF-W6-cAs" id="w1p-7Q-0GB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihh-cL-e4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2574" y="-575"/>
+            <point key="canvasLocation" x="2573.8317757009345" y="-575.37796976241907"/>
         </scene>
         <!--Item-->
         <scene sceneID="I8r-wr-aaY">

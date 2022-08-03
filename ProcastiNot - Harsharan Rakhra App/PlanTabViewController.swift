@@ -19,12 +19,26 @@ class PlanTabViewController: UIViewController, EKEventEditViewDelegate, UITableV
     @IBOutlet weak var greeting: UILabel!
     @IBOutlet weak var blueBackground: UIImageView!
     
+    var tasks: [HomeViewController.Task] = []
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         blueBackground.layer.cornerRadius = 49
         tableView.reloadData()
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Home") as? HomeViewController
+        tasks = vc!.tasks
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didGetNotification(_:)), name: Notification.Name("Tasks"), object: nil)
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func didGetNotification(_ notification: Notification){
+        print("Notification Recieved")
+        tasks = (notification.object as? [HomeViewController.Task])!
+        tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -36,7 +50,7 @@ class PlanTabViewController: UIViewController, EKEventEditViewDelegate, UITableV
     
     override func viewWillAppear(_ animated:Bool){
         super.viewWillAppear(animated)
-        
+ 
      }
     
 
@@ -76,50 +90,44 @@ class PlanTabViewController: UIViewController, EKEventEditViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "Home") as? HomeViewController{
-            return vc.tasks.count
-        }
-        return 0
+        return tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "planTableViewCell") as! PlanTableViewCell
-        
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "Home") as? HomeViewController{
-            tableViewCell.TaskLabel.text = vc.tasks[indexPath.row].task
-        }
-        
+        tableViewCell.TaskLabel.text = tasks[indexPath.row].task
+        tableViewCell.PlanLabel.layer.masksToBounds = true
+        tableViewCell.PlanLabel.layer.cornerRadius = 25
+
         
         return tableViewCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var title = ""
-        
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "Home") as? HomeViewController{
-            title = vc.tasks[indexPath.row].task
-            print(title)
-        }
-        
-        print("test")
-        
+        let title = tasks[indexPath.row].task
+
         switch EKEventStore.authorizationStatus(for: .event)
         {
         case .notDetermined:
             eventStore.requestAccess(to: .event){granted, error in
                 if granted{
                     print("Authorised")
-                    self.presentEventVc(title)
+                    self.presentEventVc(title!)
                 }
             }
         case .authorized:
             print("Authorised")
-            self.presentEventVc(title)
+            self.presentEventVc(title!)
         default:
             break
         }
     }
     
+    @IBAction func calenderTapped(_ sender: Any) {
+        if let url = URL(string: "calshow://") {
+          UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     
     /*
     // MARK: - Navigation

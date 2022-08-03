@@ -25,7 +25,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         var dueDate: String!
     }
     
-    var tasks: [Task] = [Task(task: "it works", dueDate: "test"), Task(task: "test", dueDate:"test")]
+    var tasks: [Task] = [Task(task: "Example Task", dueDate: "06/02")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBAction func addTask(_ sender: Any) {
         validateFields()
-        
+
     }
     
     func validateFields(){
@@ -77,6 +77,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func storeData(){
         tasks.append(Task(task: task.text, dueDate: due.text))
+        if(tasks[0].task == "Example Task"){
+            tasks.remove(at: 0)
+        }
+        NotificationCenter.default.post(name: Notification.Name("Tasks"), object: tasks)
         tableView.reloadData()
         task.text = ""
         due.text = ""
