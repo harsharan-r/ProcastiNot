@@ -1,4 +1,45 @@
-# ProcastiNot---Harsharan-Rakhra-Swift-App
-App made in Co-Op with Our Wave Hub partnered with Apple.
+# ProcastiNot  
+### by Harsharan Rakhra
 
-This was an app developed in one month from start to finish without any prior knowledge of swift. This app was developed using the design process and the project planning app miro, and was pitched to a panel of judges using a slide deck made in keynote. This app was developed to solve the problem of procastionation by creating an app that will allow you to add your daily task, plan when to do them and add them to your apple calender seemlessly, allow you to lock notifications and apps when your working and sleeping, and have various resouces for you to calm yourself down when stressing and to do research about procastinate and its solutions. 
+**Developed in partnership with Our Wave Hub and Apple.**
+
+---
+
+## Overview
+
+**ProcastiNot** is a Swift-based productivity app designed to tackle procrastination head-on. Developed over the course of just one month — without any prior Swift experience — this app showcases the power of rapid learning, thoughtful design, and effective project planning.
+
+## Key Features
+
+- **Task Management**:  
+  Easily add your daily tasks, plan when to complete them, and seamlessly integrate them into your Apple Calendar.
+
+- **Focus & Sleep Tools**:  
+  Lock notifications and restrict app usage during work and sleep hours to maintain focus.
+
+- **Calm & Research Resources**:  
+  Access curated resources to help manage stress and learn more about the causes and solutions for procrastination.
+
+## Development Journey
+
+- Built using **Swift** with **no prior experience**.
+- Planned and designed using **Miro** (project management and design tool).
+- Presented to a panel of judges using a **Keynote** slide deck.
+- Developed as part of a **Co-Op program** with **Our Wave Hub** and **Apple**.
+
+## Installation Guide
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/harsharan-r/ProcastiNot.git
+   ```
+2. **Open the project**:
+   - Navigate to the project folder.
+   - Open the `.xcodeproj` or `.xcworkspace` file in **Xcode**.
+
+3. **Install dependencies** (if any):
+   - Use **Swift Package Manager (SPM)**, **CocoaPods**, or **Carthage** if external libraries are used.
+
+4. **Build and run**:
+   - Select a simulator or a connected iOS device.
+   - Press `Run` (or `Cmd + R`) in Xcode to launch the app.
