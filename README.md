@@ -1,7 +1,7 @@
 # ProcastiNot  
 ### by Harsharan Rakhra
 
-**Developed in partnership with Our Wave Hub and Apple.**
+**Developed during a co-op at Our Wave Hub in partnership with Apple.**
 
 ---
 
